@@ -8,7 +8,7 @@ highly performant [push-relabel maximum flow algorithm](https://en.wikipedia.org
 <dependency>
     <groupId>org.open-structures</groupId>
     <artifactId>matching</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 </dependency>
 ```
 
