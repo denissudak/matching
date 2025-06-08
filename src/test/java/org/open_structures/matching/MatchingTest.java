@@ -87,6 +87,21 @@ public class MatchingTest {
     }
 
     @Test
+    public void shouldGetFlowAmount() {
+        // given
+        Matching<String, String> matching = Matching.newMatching(matchPredicate, newHashSet(u1, u2, u3), newHashSet(v1, v2, v3));
+
+        // then
+        assertThat(matching.getFlowAmount()).isZero();
+
+        // and when
+        matching.findMatching();
+
+        // then
+        assertThat(matching.getFlowAmount()).isEqualTo(3);
+    }
+
+    @Test
     public void shouldFindMatching() {
         // given
         Matching<String, String> matching = Matching.newMatching(matchPredicate, newHashSet(u1, u2, u3), newHashSet(v1, v2, v3));
