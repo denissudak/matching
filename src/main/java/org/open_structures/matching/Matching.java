@@ -28,7 +28,7 @@ public class Matching<U, V> implements Restorable<PushRelabelMaxFlow.State> {
         this.maxFlow = new PushRelabelMaxFlow(flowNetwork);
     }
 
-    FlowNetwork getFlowNetwork() {
+    public FlowNetwork getFlowNetwork() {
         return flowNetwork;
     }
 
